@@ -18,6 +18,9 @@ $(document).ready(function () {
     })
   }
 
+  if($(".custom-select").length){
+    $(".custom-select").niceSelect();
+  }
 
   if ($(".osri-prgrams-section-slider").length) {
     $(".osri-prgrams-section-slider").slick({
