@@ -1829,7 +1829,7 @@ p {
 }
 
 /* ================================================================ */
-.for-rigister-sessions .for-rigister-sessions-form {
+.for-rigister-sessions-form {
   background-color: #f2f2f2;
   border-radius: 30px;
   padding: 35px;
@@ -1843,11 +1843,20 @@ p {
   margin-bottom: 80px;
   font-weight: bold;
 }
+.form-style .headno-margin {
+  margin-bottom: 40px;
+}
+.form-style .text {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
 .form-style .form-group {
   margin-bottom: 55px;
 }
 .form-style .form-group label {
   font-size: 1.1rem;
+  font-weight: bold;
 }
 .form-style .form-group label sup {
   color: red;
@@ -1890,9 +1899,142 @@ p {
 .form-style .btn-submit .btn-style {
   width: 100%;
 }
+.form-style .form-group-nomargin {
+  margin: 0;
+}
+.form-style .form-group-nomargin a {
+  color: #6c6c6c;
+  text-decoration: underline;
+}
+.form-style .form-group-nomargin .rememberme label {
+  color: #6c6c6c;
+  font-size: 0.9rem;
+}
+.form-style .btn-submit {
+  margin-top: 90px;
+}
+.form-style .btn-submit .btn-style {
+  background-color: #f5862c;
+  border-color: #f5862c;
+}
+.form-style .no-account {
+  color: #000;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
+.form-style .no-account a {
+  color: #028a98;
+}
+.form-style .form-for-otp {
+  margin-top: 100px;
+  text-align: center;
+}
+.form-style .form-for-otp h5 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+.form-style .form-for-otp .form-control {
+  width: 80px;
+  height: 80px;
+  background-color: #F4F4F4;
+  border-radius: 7px;
+  margin: 0 12px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.form-style .form-for-otp .form-control:focus {
+  background-color: #fff;
+}
+.form-style .mailoption {
+  font-size: 0.8rem !important;
+  color: #636363 !important;
+  font-weight: 300 !important;
+}
+
+.login-page {
+  padding: 55px 0;
+}
+.login-page .for-rigister-sessions-form {
+  border-radius: 0;
+  height: 100%;
+  border-radius: 0 16px 16px 0;
+}
+.login-page .form-group {
+  margin-bottom: 0;
+  margin-top: 80px;
+}
+.login-page .form-group-nomargin {
+  margin: 0;
+  margin-top: 20px;
+}
+.login-page .card-img {
+  border-radius: 16px 0 0 16px;
+  height: 100% !important;
+}
+.login-page .card-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #028A98;
+  opacity: 0.7;
+  border-radius: 16px 0 0 16px;
+}
+.login-page .card-img img {
+  border-radius: 16px 0 0 16px;
+}
+
+input[type=email], input[type=number] {
+  text-align: right !important;
+}
+
+.rigister-page .rememberme label {
+  font-weight: bold;
+  color: #000 !important;
+}
+.rigister-page .rememberme label a {
+  color: #028a98;
+}
 
 /* ================================================================ */
+.project-page {
+  padding: 55px 0;
+}
+.project-page .newnews_card {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  margin-bottom: 30px;
+}
+.project-page .newnews_card .card-img {
+  height: 358px;
+}
+.project-page .newnews_card .card-title {
+  color: #636363;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+.project-page .newnews_card .card-text {
+  font-size: 0.8rem;
+  color: #A7A7A7;
+}
+.project-page .newnews_card .btn-more {
+  text-align: left;
+  margin-top: 25px;
+}
+.project-page .newnews_card .btn-style {
+  padding: 12px 25px;
+  border-radius: 30px;
+}
+
 /* ================================================================ */
+.strategic-framework-page {
+  padding: 55px 0;
+}
+
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
