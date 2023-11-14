@@ -2305,7 +2305,7 @@ input[type=number] {
 .about-us-section-page {
   background-image: url(../images/kiwihug-cqhXfrRHCPo-unsplash.png);
   padding: 0 0 95px 0;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   position: relative;
 }
 .about-us-section-page:after {
@@ -2378,6 +2378,47 @@ input[type=number] {
 }
 .about-us-section-page .ab-img img {
   border-radius: 0 0 14px 14px;
+}
+
+.hikel .section-header {
+  margin: 0;
+  display: block;
+  margin-bottom: 50px;
+}
+.hikel .section-header h5 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+.hikel .section-header p {
+  width: 70%;
+  margin: auto;
+}
+
+.our-trip {
+  margin-top: 100px;
+  background-color: #EEEEEE;
+}
+.our-trip .our-trip-content {
+  padding: 35px 0;
+}
+.our-trip h5 {
+  font-size: 2.3rem;
+  color: #000;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.our-trip li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+.our-trip li p {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+.our-trip .card-img {
+  height: 70vh;
 }
 
 /* ================================================================ */
