@@ -14,12 +14,85 @@
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
+  <!-- for menue in mobile -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css"
+    integrity="sha512-nNatP1G6CEh43irXY/GN4cDcLRX/R0jAYAV/ulFZcotSXcuIQE5Do4TuDOYNAD2SCIpmIbaYSllyjTysSCkpEw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Home</title>
 </head>
 
 <body>
 
+  <!-- <div class="bg-side-open"></div> -->
+
+
+  <div class="splashscreen">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <nav id="menu">
+    <ul>
+      <li><a href="">الرئيسية</a></li>
+      <li>
+        <span>من نحن</span>
+        <ul>
+          <li><a href="">قصتنا</a></li>
+          <li><a href="">الإطار الاستراتيجي</a></li>
+          <li><a href="">فريق أسرية</a></li>
+          <li><a href="">خدماتنا</a></li>
+          <li><a href="">مشاريعنا</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>الحوكمة</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li>
+        <span>الخدمات الإلكترونية</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li>
+        <span>فروع أسرية</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li>
+        <span>التطوع</span>
+        <ul>
+          <li><a href="">مركز أسرية لضيافة الأطفال</a></li>
+          <li><a href="">دليل الإرشاد الأسري</a></li>
+          <li><a href=""> نادي الرائدة الاسرية بالعيون</a></li>
+          <li><a href="">معهد التنمية العالي للتدريب بالأحساء</a></li>
+          <li><a href="">نادي الرائدة الأسرية بالمبرز ( رواء للفتيات )</a></li>
+          <li><a href="">معهد التنمية العالي للتدريب ( تدريب نساء )</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>المركز الاعلامي</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li>
+        <span>الشكاوي و المقترحات</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li><a href="">تواصل معنا</a></li>
+    </ul>
+  </nav>
 
   <div class="top_header">
     <div class="container-fluid pd-50">
@@ -51,7 +124,7 @@
     </div>
   </div>
 
-  <nav class="custom_navbar">
+  <div class="custom_navbar">
     <div class="container-fluid pd-50">
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-9 col-lg-9">
@@ -108,6 +181,18 @@
             <li class="nav-item"><a href="" class="nav-link">تواصل معنا</a></li>
             <li class="nav-item"><a href="" class="nav-link"></a></li>
           </ul>
+
+
+          <div class="side_icon">
+            <a href="#menu" class="menu_icon" data-cursor="-icon">
+              <div id="nav-icon1">
+                <!-- <span></span> -->
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
           <div class="search-account d-flex align-items-center justify-content-end">
@@ -120,7 +205,8 @@
                   <span> حسابي الشحصي</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">تسجيل الدخول</a></li>
+                  <li><button class="dropdown-item">تسجيل
+                      الدخول</button></li>
                   <li><a class="dropdown-item" href="#">تسجيل حساب جديد</a></li>
                 </ul>
               </div>
@@ -129,11 +215,10 @@
         </div>
       </div>
     </div>
-  </nav>
+  </div>
 
 
-
-  <header class="header">
+  <div class="header">
     <div class="header_slider">
       <div class="slider_item">
         <div class="card-img">
@@ -159,7 +244,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
 
 
   <div class="vision_mission">
@@ -427,7 +512,7 @@
                 </div>
               </div>
               <div class="card-link">
-                <a href="">اشترك الان</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#subscripeModal">اشترك الان</a>
               </div>
             </div>
           </div>
@@ -461,7 +546,7 @@
                 </div>
               </div>
               <div class="card-link">
-                <a href="">اشترك الان</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#subscripeModal">اشترك الان</a>
               </div>
             </div>
           </div>
@@ -495,7 +580,7 @@
                 </div>
               </div>
               <div class="card-link">
-                <a href="">اشترك الان</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#subscripeModal">اشترك الان</a>
               </div>
             </div>
           </div>
@@ -529,7 +614,7 @@
                 </div>
               </div>
               <div class="card-link">
-                <a href="">اشترك الان</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#subscripeModal">اشترك الان</a>
               </div>
             </div>
           </div>
@@ -564,7 +649,7 @@
                 </div>
               </div>
               <div class="card-link">
-                <a href="">اشترك الان</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#subscripeModal">اشترك الان</a>
               </div>
             </div>
           </div>
@@ -598,7 +683,7 @@
                 </div>
               </div>
               <div class="card-link">
-                <a href="">اشترك الان</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#subscripeModal">اشترك الان</a>
               </div>
             </div>
           </div>
@@ -1375,6 +1460,33 @@
     </div>
   </div>
 
+
+
+  <!-- modals -->
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade subscripeModalClass" id="subscripeModal" tabindex="-1" aria-labelledby="subscripeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-img">
+            <img src="./assets/images/modalimg.svg" alt="">
+          </div>
+          <div class="conrtent">
+            <h5>الإنضمام للبرنامج</h5>
+            <p>هل انت متأكد من رغبتك في الأنضمام لبرنامج الحوار الزوجي ؟</p>
+            <div class="buutons">
+              <a href="">نعم</a>
+              <button class="closebtn" href="" data-bs-dismiss="modal">لا</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
@@ -1383,6 +1495,10 @@
   <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
   <script src="./assets/js/jquery.nice-select.min.js"></script>
+  <!-- for menue in mobile -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.js"
+    integrity="sha512-l2fHTYCLVbhRDc5CZWrkKJ06JWFjG5etNQ4G85PbyRiHP769IiVDmhwI0BYSFOXYJUYRmaq5PvfaxacZm9eqhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

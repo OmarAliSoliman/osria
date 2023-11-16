@@ -337,6 +337,68 @@ p {
   right: 0;
 }
 
+.splashscreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #028a98;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.splashscreen .loading {
+  display: flex;
+  gap: 12px;
+}
+.splashscreen .loading div {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 -0.4rem rgba(60, 0, 80, 0.1) inset;
+  animation: cycle 1s ease-in-out infinite;
+}
+.splashscreen .loading div:nth-child(1) {
+  animation-delay: 0;
+}
+.splashscreen .loading div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.splashscreen .loading div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes cycle {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.splashscreen_none {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.mm-counter {
+  float: left;
+}
+
+.mm-btn--next:after, .mm-btn--prev:before {
+  border: 2px solid var(--mm-color-icon);
+  border-top: none;
+  border-left: none;
+}
+
 .pd-50 {
   padding: 0 150px;
 }
@@ -1576,9 +1638,6 @@ p {
   margin: auto;
   margin-top: 90px;
 }
-.children-contact .contact-information ul {
-  flex-wrap: wrap;
-}
 .children-contact .contact-information li {
   margin-bottom: 10px;
 }
@@ -2683,6 +2742,10 @@ input[type=number] {
 }
 
 /* ================================================================ */
+body.modal-open .mm-slideout {
+  z-index: inherit;
+}
+
 .team-members .member-card {
   text-align: center;
   margin-bottom: 64px;
@@ -2695,6 +2758,60 @@ input[type=number] {
 .team-member-paper {
   margin-top: 115px;
   margin-bottom: 115px;
+}
+
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+.subscripeModalClass .modal-dialog {
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+.subscripeModalClass .modal-dialog img {
+  width: 200px;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+}
+.subscripeModalClass .conrtent h5 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #028A98;
+  margin-bottom: 25px;
+}
+.subscripeModalClass .conrtent p {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+.subscripeModalClass .conrtent .buutons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.subscripeModalClass .conrtent .buutons a, .subscripeModalClass .conrtent .buutons button {
+  display: block;
+  width: 45%;
+  margin: 0 12px;
+  background-color: #F5862C;
+  border: 1px solid #F5862C;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+}
+.subscripeModalClass .conrtent .buutons a:hover, .subscripeModalClass .conrtent .buutons button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.subscripeModalClass .conrtent .buutons .closebtn {
+  background-color: #636363;
+  border: 1px solid #636363;
+}
+.subscripeModalClass .conrtent .buutons .closebtn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* ================================================================ */
@@ -2714,6 +2831,11 @@ input[type=number] {
 @media (max-width: 1025px) {
   .custom_navbar .lista {
     display: none !important;
+  }
+  .menu_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 991px) {
@@ -2770,8 +2892,9 @@ input[type=number] {
   .osria-programs .osria-programs-wrapper-title {
     margin-top: 20px;
   }
-  .osri-gifts .osria-programs-wrapper .osria-programs-wrapper-title h5::after {
+  .osri-gifts .osria-programs-wrapper .osria-programs-wrapper-title h5 {
     margin-top: 20px;
+    margin-bottom: 40px;
   }
   .watch_now_section .watch_now_cards .wide_news_card .card-img {
     width: 150px;
@@ -2826,6 +2949,27 @@ input[type=number] {
   }
   .header .card-img .content h5 {
     font-size: 2rem;
+  }
+  .watch_now_section .watch_now_cards .wide_news_card {
+    flex-direction: column;
+  }
+  .watch_now_section .watch_now_cards .wide_news_card .wide_body {
+    padding-right: 0;
+  }
+  .watch_now_section .watch_now_cards .big_watch .card_body .date_option {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .our-services-page .our-service-slider-section .services-slider .slider-serv-card.opsite {
+    margin-top: 0;
+  }
+  .our-services-page .our-service-slider-section .services-slider .slider-serv-card {
+    min-width: 90%;
+    margin: auto;
+  }
+  .children-contact .contact-information ul {
+    flex-wrap: wrap;
   }
 }
 /* ================================================================ */

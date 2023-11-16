@@ -421,6 +421,75 @@ p {
   right: 0;
 }
 
+.splashscreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $mainColor;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  .loading {
+    display: flex;
+    gap: 12px;
+  }
+
+  .loading div {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 -0.4rem rgba(60, 0, 80, 0.1) inset;
+
+    animation: cycle 1s ease-in-out infinite;
+  }
+
+  .loading div:nth-child(1) {
+    animation-delay: 0;
+  }
+
+  .loading div:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .loading div:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes cycle {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(1rem);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+.splashscreen_none {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.mm-counter{
+  float: left;
+}
+.mm-btn--next:after, .mm-btn--prev:before{
+  border: 2px solid var(--mm-color-icon);
+  border-top: none;
+  border-left: none;
+}
+
 .pd-50 {
   padding: 0 150px;
 }
@@ -1961,7 +2030,7 @@ p {
     margin: auto;
     margin-top: 90px;
     ul {
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
     }
     li {
       margin-bottom: 10px;
@@ -3132,7 +3201,7 @@ input[type="number"] {
     font-size: 1rem;
     color: #fff;
   }
-  .advhan-img{
+  .advhan-img {
     flex: none;
   }
 }
@@ -3279,7 +3348,9 @@ input[type="number"] {
 }
 
 /* ================================================================ */
-
+body.modal-open .mm-slideout{
+  z-index:inherit;
+}
 .team-members {
   .member-card {
     text-align: center;
@@ -3295,6 +3366,64 @@ input[type="number"] {
   margin-top: 115px;
   margin-bottom: 115px;
 }
+body.modal-open{
+  padding-right: 0 !important;
+}
+.subscripeModalClass{
+  .modal-dialog{
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    img{
+      width: 200px;
+      margin: auto;
+      display: block;
+      margin-top: 10px;
+    }
+
+  }
+  .conrtent{
+    h5{
+      font-size: 1.5rem;
+      margin-top: 20px;
+      color: #028A98;
+      margin-bottom: 25px;
+    }
+    p{
+      font-size: 1rem;
+      margin-bottom: 50px;
+    }
+    .buutons{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      a, button{
+        display: block;
+        width: 45%;
+        margin: 0 12px;
+        background-color: #F5862C;
+        border: 1px solid #F5862C;
+        border-radius: 10px;
+        color: #fff;
+        padding: 15px;
+        &:hover{
+          background-color: #fff;
+          color: #000;
+        }
+      }
+      .closebtn{
+        background-color: #636363;
+        border: 1px solid #636363;
+        &:hover{
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
 /* ================================================================ */
 @media (max-width: 1285px) {
   html {
@@ -3314,6 +3443,11 @@ input[type="number"] {
 @media (max-width: 1025px) {
   .custom_navbar .lista {
     display: none !important;
+  }
+  .menu_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -3364,18 +3498,18 @@ input[type="number"] {
     width: 100%;
     top: 0;
   }
-  .advange-card{
-    .advhan-img{
+  .advange-card {
+    .advhan-img {
       // flex: unset;
     }
-  } 
-  .about-us-section-page .ab-content .note-box{
+  }
+  .about-us-section-page .ab-content .note-box {
     margin-left: 0;
   }
-  .contact-information .contact-information-wrapper li a{
+  .contact-information .contact-information-wrapper li a {
     word-break: break-all;
   }
-  .contact-information .contact-information-wrapper .last-list{
+  .contact-information .contact-information-wrapper .last-list {
     padding-right: 0;
   }
 }
@@ -3384,8 +3518,9 @@ input[type="number"] {
   .osria-programs .osria-programs-wrapper-title {
     margin-top: 20px;
   }
-  .osri-gifts .osria-programs-wrapper .osria-programs-wrapper-title h5::after {
+  .osri-gifts .osria-programs-wrapper .osria-programs-wrapper-title h5 {
     margin-top: 20px;
+    margin-bottom: 40px;
   }
   .watch_now_section .watch_now_cards .wide_news_card .card-img {
     width: 150px;
@@ -3423,25 +3558,46 @@ input[type="number"] {
     width: 50px;
     height: 50px;
   }
-  .half-trmplate{
-    img{
+  .half-trmplate {
+    img {
       display: none;
     }
   }
-  .advange-card{
+  .advange-card {
     flex-direction: column;
   }
-  .work-tracks .track-pargraph{
+  .work-tracks .track-pargraph {
     width: 100%;
   }
-  .procedural-guide-page .pdfs-list li{
+  .procedural-guide-page .pdfs-list li {
     flex-direction: column;
   }
-  .procedural-guide-page .pdfs-list li h5{
+  .procedural-guide-page .pdfs-list li h5 {
     margin-bottom: 20px;
   }
-  .header .card-img .content h5{
+  .header .card-img .content h5 {
     font-size: 2rem;
+  }
+  .watch_now_section .watch_now_cards .wide_news_card {
+    flex-direction: column;
+  }
+  .watch_now_section .watch_now_cards .wide_news_card .wide_body {
+    padding-right: 0;
+  }
+  .watch_now_section .watch_now_cards .big_watch .card_body .date_option {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .our-services-page .our-service-slider-section .services-slider .slider-serv-card.opsite{
+    margin-top: 0;
+  }
+  .our-services-page .our-service-slider-section .services-slider .slider-serv-card{
+    min-width: 90%;
+    margin: auto;
+  }
+  .children-contact .contact-information ul{
+    flex-wrap: wrap;
   }
 }
 /* ================================================================ */

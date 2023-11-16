@@ -168,7 +168,7 @@ $(document).ready(function () {
   // }
 
 
-  // $(".custom-navbar #nav-icon1").click(function () {
+  // $(".custom_navbar #nav-icon1").click(function () {
   //   $(".side-nav").addClass("side-nav-open");
   //   $("html").addClass("side-active");
   // });
@@ -198,7 +198,23 @@ $(document).ready(function () {
 });
 
 $(window).on("load", function () {
-  $("html").removeClass("splash-active");
+  // $("html").removeClass("splash-active");
+  // $(".splashscreen").addClass("splashscreen_none");
+
+  new Mmenu("#menu", {
+    offCanvas: {
+      slidingSubmenus: false,
+      position: "right-front",
+    },
+    theme: "light",
+    counters: {
+      add: true,
+    },
+  });
+  $(".mm-navbar__title").text("القائمة")
+});
+
+$(window).on("load", function () {
   $(".splashscreen").addClass("splashscreen_none");
 });
 
