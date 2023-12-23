@@ -393,7 +393,8 @@ p {
   float: left;
 }
 
-.mm-btn--next:after, .mm-btn--prev:before {
+.mm-btn--next:after,
+.mm-btn--prev:before {
   border: 2px solid var(--mm-color-icon);
   border-top: none;
   border-left: none;
@@ -2778,7 +2779,7 @@ body.modal-open {
 .subscripeModalClass .conrtent h5 {
   font-size: 1.5rem;
   margin-top: 20px;
-  color: #028A98;
+  color: #028a98;
   margin-bottom: 25px;
 }
 .subscripeModalClass .conrtent p {
@@ -2791,17 +2792,19 @@ body.modal-open {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-.subscripeModalClass .conrtent .buutons a, .subscripeModalClass .conrtent .buutons button {
+.subscripeModalClass .conrtent .buutons a,
+.subscripeModalClass .conrtent .buutons button {
   display: block;
   width: 45%;
   margin: 0 12px;
-  background-color: #F5862C;
-  border: 1px solid #F5862C;
+  background-color: #f5862c;
+  border: 1px solid #f5862c;
   border-radius: 10px;
   color: #fff;
   padding: 15px;
 }
-.subscripeModalClass .conrtent .buutons a:hover, .subscripeModalClass .conrtent .buutons button:hover {
+.subscripeModalClass .conrtent .buutons a:hover,
+.subscripeModalClass .conrtent .buutons button:hover {
   background-color: #fff;
   color: #000;
 }
@@ -2812,6 +2815,60 @@ body.modal-open {
 .subscripeModalClass .conrtent .buutons .closebtn:hover {
   background-color: #fff;
   color: #000;
+}
+
+/* ================================================================ */
+.branches-page {
+  position: relative;
+  overflow: hidden;
+}
+.branches-page .thecircle {
+  position: absolute;
+  z-index: -1;
+}
+.branches-page .circle1 {
+  top: 10%;
+  right: -250px;
+}
+.branches-page .circle2 {
+  top: 30%;
+  left: -450px;
+}
+.branches-page .circle3 {
+  top: 70%;
+  left: -450px;
+}
+
+.branche-card {
+  margin-bottom: 130px;
+  margin-top: 30px;
+}
+.branche-card .branche-card-content {
+  border: 0.5px solid rgba(112, 112, 112, 0.68);
+  padding: 38px 42px 38px 10px;
+  background-color: #fff;
+  position: relative;
+  z-index: 3;
+}
+.branche-card .branche-card-content h5 {
+  font-size: 1.9rem;
+  color: #f5862c;
+  margin-bottom: 31px;
+}
+.branche-card .branche-card-content h5 span {
+  color: #028a98;
+  margin-left: 15px;
+}
+.branche-card .branche-card-content .card-text {
+  line-height: 35px;
+  font-size: 1.1rem;
+}
+.branche-card .branche-card-img {
+  text-align: center;
+}
+.branche-card .branche-card-img img {
+  width: 570px;
+  margin: auto;
 }
 
 /* ================================================================ */
@@ -2970,6 +3027,10 @@ body.modal-open {
   }
   .children-contact .contact-information ul {
     flex-wrap: wrap;
+  }
+  .branche-card .branche-card-img {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 /* ================================================================ */

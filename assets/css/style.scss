@@ -481,10 +481,11 @@ p {
   z-index: -1;
 }
 
-.mm-counter{
+.mm-counter {
   float: left;
 }
-.mm-btn--next:after, .mm-btn--prev:before{
+.mm-btn--next:after,
+.mm-btn--prev:before {
   border: 2px solid var(--mm-color-icon);
   border-top: none;
   border-left: none;
@@ -3348,8 +3349,8 @@ input[type="number"] {
 }
 
 /* ================================================================ */
-body.modal-open .mm-slideout{
-  z-index:inherit;
+body.modal-open .mm-slideout {
+  z-index: inherit;
 }
 .team-members {
   .member-card {
@@ -3366,60 +3367,117 @@ body.modal-open .mm-slideout{
   margin-top: 115px;
   margin-bottom: 115px;
 }
-body.modal-open{
+body.modal-open {
   padding-right: 0 !important;
 }
-.subscripeModalClass{
-  .modal-dialog{
+.subscripeModalClass {
+  .modal-dialog {
     width: 600px;
     max-width: 100%;
     text-align: center;
-    img{
+    img {
       width: 200px;
       margin: auto;
       display: block;
       margin-top: 10px;
     }
-
   }
-  .conrtent{
-    h5{
+  .conrtent {
+    h5 {
       font-size: 1.5rem;
       margin-top: 20px;
-      color: #028A98;
+      color: #028a98;
       margin-bottom: 25px;
     }
-    p{
+    p {
       font-size: 1rem;
       margin-bottom: 50px;
     }
-    .buutons{
+    .buutons {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       margin-bottom: 20px;
-      a, button{
+      a,
+      button {
         display: block;
         width: 45%;
         margin: 0 12px;
-        background-color: #F5862C;
-        border: 1px solid #F5862C;
+        background-color: #f5862c;
+        border: 1px solid #f5862c;
         border-radius: 10px;
         color: #fff;
         padding: 15px;
-        &:hover{
+        &:hover {
           background-color: #fff;
           color: #000;
         }
       }
-      .closebtn{
+      .closebtn {
         background-color: #636363;
         border: 1px solid #636363;
-        &:hover{
+        &:hover {
           background-color: #fff;
           color: #000;
         }
       }
+    }
+  }
+}
+
+/* ================================================================ */
+
+.branches-page{
+  position: relative;
+  overflow: hidden;
+  .thecircle{
+    position: absolute;
+    z-index: -1;
+  }
+  .circle1{
+    top: 10%;
+    right: -250px;
+  }
+
+  .circle2{
+    top: 30%;
+    left: -450px;
+  }
+
+  .circle3{
+    top: 70%;
+    left: -450px;
+  }
+}
+
+.branche-card {
+  margin-bottom: 130px;
+  margin-top: 30px;
+  .branche-card-content {
+    border: 0.5px solid rgba(#707070, .68);
+    padding: 38px 42px 38px 10px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+    h5 {
+      font-size: 1.9rem;
+      color: $secondColor;
+      margin-bottom: 31px;
+      span {
+        color: $mainColor;
+        margin-left: 15px;
+      }
+    }
+    .card-text {
+      line-height: 35px;
+      font-size: 1.1rem;
+    }
+  }
+  .branche-card-img{
+    text-align: center;
+    img{
+      width: 570px;
+      margin: auto;
     }
   }
 }
@@ -3444,7 +3502,7 @@ body.modal-open{
   .custom_navbar .lista {
     display: none !important;
   }
-  .menu_icon{
+  .menu_icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3589,15 +3647,25 @@ body.modal-open{
     align-items: flex-start;
     margin-bottom: 20px;
   }
-  .our-services-page .our-service-slider-section .services-slider .slider-serv-card.opsite{
+  .our-services-page
+    .our-service-slider-section
+    .services-slider
+    .slider-serv-card.opsite {
     margin-top: 0;
   }
-  .our-services-page .our-service-slider-section .services-slider .slider-serv-card{
+  .our-services-page
+    .our-service-slider-section
+    .services-slider
+    .slider-serv-card {
     min-width: 90%;
     margin: auto;
   }
-  .children-contact .contact-information ul{
+  .children-contact .contact-information ul {
     flex-wrap: wrap;
+  }
+  .branche-card .branche-card-img{
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 /* ================================================================ */
