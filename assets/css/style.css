@@ -2872,6 +2872,173 @@ body.modal-open {
 }
 
 /* ================================================================ */
+.regulation-general-addemply-page .section-header {
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+.regulation-general-addemply-page .section-header h5 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.regulation-general-addemply-page .pathes .top-content p {
+  line-height: 42px;
+}
+.regulation-general-addemply-page .pathes .pathes-img img {
+  width: 90%;
+}
+.regulation-general-addemply-page .defenitions {
+  background-color: #eeeeee;
+  padding: 35px 0;
+}
+.regulation-general-addemply-page .defenitions .section-header {
+  display: block;
+  margin-bottom: 25px;
+}
+.regulation-general-addemply-page .defenitions .section-header .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+.regulation-general-addemply-page .defenitions .section-header .head span {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.regulation-general-addemply-page .defenitions .section-header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 42px;
+}
+.regulation-general-addemply-page .mangment-orgnizers .section-header {
+  display: block;
+}
+.regulation-general-addemply-page .mangment-orgnizers .section-header .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+.regulation-general-addemply-page .mangment-orgnizers .section-header .head span {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.regulation-general-addemply-page .mangment-orgnizers .section-header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 42px;
+}
+.regulation-general-addemply-page .mangment-orgnizers .section-header p span {
+  display: block;
+  color: #f5862c;
+  font-size: 1.2rem;
+}
+.regulation-general-addemply-page .our-story-build {
+  background-color: rgba(245, 134, 44, 0.1);
+  padding: 50px 0 !important;
+  margin-top: 146px;
+}
+.regulation-general-addemply-page .our-story-build .our-story-build-content p {
+  color: #028a98;
+  font-size: 1.2rem;
+}
+.regulation-general-addemply-page .our-story-build .our-story-build-content ul li {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.regulation-general-addemply-page .our-story-build .our-story-build-content ul li span {
+  font-weight: 300;
+  margin-right: 10px;
+  line-height: 38px;
+}
+.regulation-general-addemply-page .our-story-build .our-story-build-img {
+  text-align: left;
+}
+.regulation-general-addemply-page .mangmaent-mession {
+  background-color: transparent;
+  margin-top: 30px !important;
+  padding-top: 0 !important;
+  position: relative;
+}
+.regulation-general-addemply-page .mangmaent-mession .circle-missio {
+  position: absolute;
+  top: 50%;
+  left: -200px;
+  transform: translate(0, -50%);
+}
+.regulation-general-addemply-page .mangmaent-mession2 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+.regulation-general-addemply-page .mangmaent-mession2 .our-story-build-img {
+  position: absolute;
+  right: 0;
+  width: 45%;
+}
+.regulation-general-addemply-page .mangmaent-mession2 .our-story-build-img img {
+  width: 100%;
+}
+
+.orginzer-card {
+  width: 50%;
+  height: 100px;
+}
+.orginzer-card .card-text {
+  position: relative;
+  bottom: 40px;
+  width: 80%;
+}
+.orginzer-card.opsite-card {
+  margin-right: auto;
+}
+.orginzer-card.opsite-card .card-text {
+  margin-right: auto;
+}
+.orginzer-card.first-orginzer-card .card-text p {
+  color: #9615ea;
+}
+.orginzer-card.second-orginzer-card .card-text p {
+  color: #f515b8;
+}
+.orginzer-card.third-orginzer-card .card-text p {
+  color: #4015e0;
+}
+.orginzer-card.fourth-orginzer-card .card-text p {
+  color: #00adef;
+}
+.orginzer-card.fifth-orginzer-card .card-text p {
+  color: #15cdec;
+}
+.orginzer-card.sixth-orginzer-card .card-text p {
+  color: #0dce6c;
+}
+.orginzer-card.seventh-orginzer-card .card-text p {
+  color: #8fd401;
+}
+.orginzer-card.eighth-orginzer-card .card-text p {
+  color: #d47c01;
+}
+
+.defenition-card {
+  text-align: center;
+  margin-bottom: 110px;
+}
+.defenition-card .card-title h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.defenition-card .card-text {
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
+.defenition-card .card-text p {
+  font-size: 1.1rem;
+  color: #030303;
+}
+
+/* ================================================================ */
 @media (max-width: 1285px) {
   html {
     font-size: 14px;

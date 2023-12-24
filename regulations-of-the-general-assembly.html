@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="./assets/css/nice-select.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
+  <!-- for menue in mobile -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css"
+    integrity="sha512-nNatP1G6CEh43irXY/GN4cDcLRX/R0jAYAV/ulFZcotSXcuIQE5Do4TuDOYNAD2SCIpmIbaYSllyjTysSCkpEw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Home</title>
+</head>
+
+<body>
+
+  <!-- <div class="splashscreen">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div> -->
+
+  <!-- mobile menu -->
+  <nav id="menu">
+    <ul>
+      <li><a href="">الرئيسية</a></li>
+      <li>
+        <span>من نحن</span>
+        <ul>
+          <li><a href="">قصتنا</a></li>
+          <li><a href="">الإطار الاستراتيجي</a></li>
+          <li><a href="">فريق أسرية</a></li>
+          <li><a href="">خدماتنا</a></li>
+          <li><a href="">مشاريعنا</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>الحوكمة</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li>
+        <span>الخدمات الإلكترونية</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li>
+        <span>فروع أسرية</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li>
+        <span>التطوع</span>
+        <ul>
+          <li><a href="">مركز أسرية لضيافة الأطفال</a></li>
+          <li><a href="">دليل الإرشاد الأسري</a></li>
+          <li><a href=""> نادي الرائدة الاسرية بالعيون</a></li>
+          <li><a href="">معهد التنمية العالي للتدريب بالأحساء</a></li>
+          <li><a href="">نادي الرائدة الأسرية بالمبرز ( رواء للفتيات )</a></li>
+          <li><a href="">معهد التنمية العالي للتدريب ( تدريب نساء )</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>المركز الاعلامي</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li>
+        <span>الشكاوي و المقترحات</span>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+      </li>
+      <li><a href="">تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+  <div class="top_header">
+    <div class="container-fluid pd-50">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="site_date">
+            <span>الأحد 22 مارس 2023</span>
+            <span>/</span>
+            <span>13 رجب 1445</span>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="social">
+            <ul class="list-unstyled d-flex align-items-center justify-content-end">
+              <li><a href=""><img src="./assets/images/linkedi.svg" alt=""></a></li>
+              <li><a href=""><img src="./assets/images/insta.svg" alt=""></a></li>
+              <li><a href=""><img src="./assets/images/twitter.svg" alt=""></a></li>
+              <li><a href=""><img src="./assets/images/facebook.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle_logo">
+    <div class="container-fluid pd-50">
+      <img src="./assets/images/middlelogo.svg" class="w-100" alt="">
+    </div>
+  </div>
+
+  <div class="custom_navbar">
+    <div class="container-fluid pd-50">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-9 col-lg-9">
+          <ul class="lista list-unstyled d-flex align-items-center">
+            <li class="nav-item"><a href="" class="nav-link">الرئيسية</a></li>
+            <li class="nav-item submenu-parent">
+              <a href="" class="nav-link">
+                <span>من نحن <i class="fas fa-chevron-down"></i></span>
+                <div class="submenu">
+                  <ul class="list-unstyled">
+                    <li class="sub-item"><a class="sub-link" href="">قصتنا</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">الإطار الاستراتيجي</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">فريق أسرية</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">خدماتنا</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">مشاريعنا</a></li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item submenu-parent">
+              <a href="" class="nav-link">
+                <span>الحوكمة <i class="fas fa-chevron-down"></i></span>
+                <div class="submenu">
+                  <ul class="list-unstyled">
+                    <li class="sub-item"><a class="sub-link" href="">قصتنا</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">الإطار الاستراتيجي</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">فريق أسرية</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">خدماتنا</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">مشاريعنا</a></li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item submenu-parent">
+              <a href="" class="nav-link">
+                <span>الحوكمة <i class="fas fa-chevron-down"></i></span>
+                <div class="submenu">
+                  <ul class="list-unstyled">
+                    <li class="sub-item"><a class="sub-link" href="">قصتنا</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">الإطار الاستراتيجي</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">فريق أسرية</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">خدماتنا</a></li>
+                    <li class="sub-item"><a class="sub-link" href="">مشاريعنا</a></li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item submenu-parent">
+              <a href="" class="nav-link">فروع أسرية</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">التطوع</a></li>
+            <li class="nav-item"><a href="" class="nav-link">المركز الاعلامي</a></li>
+            <li class="nav-item"><a href="" class="nav-link">الشكاوي و المقترحات</a></li>
+            <li class="nav-item"><a href="" class="nav-link">تواصل معنا</a></li>
+            <li class="nav-item"><a href="" class="nav-link"></a></li>
+          </ul>
+
+
+          <div class="side_icon">
+            <a href="#menu" class="menu_icon" data-cursor="-icon">
+              <div id="nav-icon1">
+                <!-- <span></span> -->
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="search-account d-flex align-items-center justify-content-end">
+            <div class="search"><i class="fas fas fa-search"></i></div>
+            <div class="account">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fas fa-user"></i>
+                  <span> حسابي الشحصي</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item">تسجيل
+                      الدخول</button></li>
+                  <li><a class="dropdown-item" href="#">تسجيل حساب جديد</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="custom_breadcrumb">
+    <div class="container-fuild pd-50">
+      <ul class="list-unstyled">
+        <li><a href="">الحوكمة</a></li>
+        <li><a href="">لائحة الجمعية العمومية</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="regulation-general-addemply-page">
+    <div class="container-fuild pd-50">
+      <div class="section-header">
+        <h5>لائحة الجمعية العمومية</h5>
+      </div>
+
+
+
+      <div class="pathes">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="pathes-content">
+              <div class="top-content">
+                <h5>مقدمة </h5>
+                <p>
+                  يرتبط نجاح العمل المؤسسي بالجانب التنظيمي الذي يشكل محورًا أساسيًا لبناء شبكة قنوات متفاعلة بين جميع
+                  الأطراف.
+                </p>
+                <p>
+                  من هنا تأتي أهمية وجود دليل تنظيمي في ضوء أهداف ولوائح معتمدة من الجهات العليا، وذلك لتحديد مهام كل
+                  وحدة إدارية في الهيكل الوظيفي، وبالتالي تنظيم عمل جميع الأطراف ومسؤولياتهم المختلفة للمساهمة في أداء
+                  الرسالة وتحقيق الأهداف للنظام
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="pathes-img">
+              <img src="./assets/images/lae7a1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pathes">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="pathes-img">
+              <img src="./assets/images/lae7a2.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="pathes-content">
+              <div class="top-content">
+                <p>
+                  ولا يستثنى من ذلك العمل الخيري ، فهي كغيرها من المؤسسات والبرامج تتطلب وجود هيكل تنظيمي واضح ومحدد
+                  المهام لتحقيق الغايات والأهداف، والمساعدة في توزيع المسؤوليات وتفعيل الأدوار المنوطة بمنسوبي المؤسسة
+                  الخيرية ، ورفع مستوى قدراتهم في تحقيق رؤيتها ورسالتها.
+                  إن إطار توصيف المهام الوظيفية لا يخلو من وصف الأدوار وتحديد صلاحيات جميع منسوبي المؤسسة وتحديد
+                  الارتباط الإداري لكل مهمة في الهيكل التنظيمي. فمن الضروري أن يوجد بكل مؤسسة أو وحدة إدارية توصيف وظيفي
+                  لكل مهمة من بداية السلم حتى أعلاه، وهذا يساعد بشكل دقيق في فهم الصلاحيات المخولة لكل منهم، وبدوره
+                  يساهم في تحسين جودة العمل
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="defenitions">
+      <div class="container-fluid pd-50">
+        <div class="section-header">
+          <div class="head">
+            <img src="./assets/images/number1.svg" alt="">
+            <span>التعريفات </span>
+          </div>
+          <p class="col-lg-7 mx-auto">
+            يقصد بالألفاظ والعبارات الآتية أينما وردت في هذه اللائحة المعاني المبينة أمام كل منها ما يقتضِ سياق النص
+            خلاف ذلك
+          </p>
+        </div>
+        <div class="defenitions-cards">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def1.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>الوزارة </h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    وزارة الموارد البشرية والتنمية الاجتماعية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def2.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>النظام </h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    نظام مجلس الإدارة
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def3.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>الشفافية </h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    الإفصاح للجهات ذات الصلة عن المعلومات المالية والتنظيمية والاحصائية بحيث يمكنهم تقويم المجلس
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def4.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>المسائلة</h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    التزام الإدارة واستعدادها للإجابة على تساؤلات واستفسارات مجلس الإدارة بمعلومات واضحة ودقيقة وملائمة
+                    والتزام مجلس الإدارة بذلك أمام الجهات الأخرى ذات الصلة </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def5.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>العدل</h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    معاملة الجهات ذات الصلة بعدل واخذ مصالحهم بعين الاعتبار
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def6.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>المجلس</h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    مجلس إدارة جمعية التنمية الأسرية بالأحساء
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def7.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>الرئيس </h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    رئيس أعضاء مجلس الإدارة
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def8.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>الأعضاء </h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    أعضاء مجلس إدارة جمعية التنمية الأسرية بالأحساء
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def9.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>اللجان </h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    اللجان المنبثقة عن مجلس إدارة جمعية التنمية الأسرية بالأحساء
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def10.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>الإدارة </h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    الإدارة التنفيذية لجمعية التنمية الأسرية بالأحساء
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def11.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>الأطراف ذات الصلة </h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    الإدارة التنفيذية لجمعية التنمية الأسرية بالأحساء
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="defenition-card">
+                <div class="card-icon">
+                  <img src="./assets/images/def12.svg" alt="">
+                </div>
+                <div class="card-title">
+                  <h5>منسق المجلس</h5>
+                </div>
+                <div class="card-text">
+                  <p>
+                    هو المرشح لوظيفة منسق المجلس من خارج المجلس ويكون موظفًا بالجمعية بالتنسيق بين رئيس المجلس ومدير عام
+                    الجمعية
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mangment-orgnizers">
+      <div class="container-fluid pd-50">
+        <div class="section-header">
+          <div class="head">
+            <img src="./assets/images/number2.svg" alt="">
+            <span>التعريفات </span>
+          </div>
+          <p class="col-lg-7 mx-auto">
+            <span>لاختصاصات والمهام بين مجلس الإدارة والإدارة التنفيذية:
+            </span>
+            تتضمـــن الأنظمة الداخلية للجمعية آلية توزيع المهام والاختصاصات بين مجلس الإدارة والإدارة التنفيذية بما يتفق
+            ّ مع أفضـــل مبادئ الحوكمـــة ومعاييرها، ويُحســـن كفاءة اتخاذ قرارات الجمعية، ويحقق التوازن في الصلاحيات
+            والســـلطات بينهما، حيث عمل المجلس على تحديد ما يلي
+          </p>
+        </div>
+
+        <div class="orginzers-cards">
+          <div class="orginzer-card first-orginzer-card opsite-card">
+            <img src="./assets/images/shape01.svg" alt="">
+            <div class="card-text">
+              <p>
+                الموضوعات التي يحتفظ المجلس بصلاحية البت فيها وهي ( تعيين مدقق حسابات خارجي – اعتماد الحسابات الختامية
+                والميزانية العمومية – التعيين والإقالة المتعلقة بالمدير العام )
+              </p>
+            </div>
+          </div>
+
+          <div class="orginzer-card second-orginzer-card">
+            <img src="./assets/images/shape02.svg" alt="">
+            <div class="card-text">
+              <p>
+                المدير التنفيذي له صلاحيـــة التوقيـــع على العقـــود والاتفاقيات التي ً تكـــون الجمعية طرفـــا فيها،
+                وتمثيل الجمعية في جميـــع الجهات ومنها ً القضائية، منصوصا ً عليها نظاما
+              </p>
+            </div>
+          </div>
+
+          <div class="orginzer-card third-orginzer-card opsite-card">
+            <img src="./assets/images/shape03.svg" alt="">
+            <div class="card-text">
+              <p>
+                للمدير التنفيذ صلاحية اعتماد وتطوير اللوائـــح الداخلية المتعلقة بعمل الجمعية، والتحقق من تحديدها
+                بشـــكل واضح من حيث المهام والاختصاصات والمسؤوليات الموكلة إلى المستويات التنظيمية المختلفة أو تكليف من
+                يراه ليقوم بهذه المهمة بعد موافقة المجلس
+              </p>
+            </div>
+          </div>
+
+          <div class="orginzer-card fourth-orginzer-card">
+            <img src="./assets/images/shape04.svg" alt="">
+            <div class="card-text">
+              <p>
+                التأكيد على وجود سياســـة مكتوبة وتفصيلية تتضمن تحديد الصلاحيات المفوضـــة إلى الإدارة التنفيذيـــة،
+                وطريقة التنفيذ، ومـــدة التفويض، والطلـــب مـــن الإدارة التنفيذيـــة رفـــع تقارير دورية بشـــأن
+                ممارســـاتها للصلاحيات المفوضة
+              </p>
+            </div>
+          </div>
+
+          <div class="orginzer-card fifth-orginzer-card opsite-card">
+            <img src="./assets/images/shape05.svg" alt="">
+            <div class="card-text">
+              <p>
+                يعمل المدير التنفيذي وفقـــا لآلية توزيـــع المهـــام والاختصاصات العنايـــة اللازمة عند اتخـــاذ
+                القرار، ويلتزم بواجب الاســـتقصاء والتتبـــع في الحصول علـــى المعلومات الدقيقة والتقارير المناســـبة
+                ذات الصلة بالموضوع المتخذ بشأنه القرار
+              </p>
+            </div>
+          </div>
+
+          <div class="orginzer-card sixth-orginzer-card">
+            <img src="./assets/images/shape06.svg" alt="">
+            <div class="card-text">
+              <p>
+                إذا رأى رئيس المجلس أن المعلومـــات والتقاريـــر ذات الصلـــة بالموضـــوع غير كافية، فعليه الامتناع
+                عـــن اتخاذ القرار إلى حين توافر المعلومات
+              </p>
+            </div>
+          </div>
+
+          <div class="orginzer-card seventh-orginzer-card opsite-card">
+            <img src="./assets/images/shape07.svg" alt="">
+            <div class="card-text">
+              <p>
+                تلتزم الجمعية باتخاذ الوســـائل اللازمة لتنظيـــم عملية اتخاذ القرار بما يتيـــح لغالبيـــة العامليـــن
+                فـــي الجمعية فرص المســـاهمة فـــي اتخاذ القرارات
+              </p>
+            </div>
+          </div>
+
+          <div class="orginzer-card eighth-orginzer-card">
+            <img src="./assets/images/shape08.svg" alt="">
+            <div class="card-text">
+              <p>
+                في جميع الأحوال لا يجوز أن ينفرد شـــخص بالسلطة المطلقة لاتخاذ القرارات في الجمعية </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="our-story-build">
+      <div class="container-fluid pd-50">
+        <div class="section-header">
+          <div class="head">
+            <img src="./assets/images/number3.svg" alt="">
+            <span>مهام مجلس الإدارة لتحقيق الجودة</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-content">
+              <p>
+                يسعى مجلس الإدارة إلى تطوير عمل الجمعية بهدف تحقيق أعلى مستويات الجودة، وذلك من خلال الآتي:
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>المراجعة المستمرة للنتائج بعيدة المدى وقيمتها المادية</span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>التقييـــــم المستمـــــــر لمــــــدى مســـاهمة الجمعيـــــــة وتأثيرهـــــــا الاجتماعي</span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>المراجعـــة المستمـــــرة لـــلأداء، والسعي لتطبيق ممارسات الإدارة الجيـــدة وتطويرها في جميع
+                    أعمال الجمعية</span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>النظـــر للشكــــاوى وملاحظــــــات الأطراف ذات العلاقة، ووضع آلية للتعامل معها</span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>تحقيـــــق جميـــــــع المتطلبـــــــات النظاميــــة المتعلقــــــــة بحقــــــــوق العاملين في
+                    الجمعية</span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>منـــح العامليـــن والمتطوعيــــــن في الجمعية الدعم الكافي للقيام ّ بعملهم بشكل فعال</span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>عقد جلسات ومناقشات مفتوحة مع الأطـــراف ذوي العلاقة بشـــأن المســـائل ذات الصلـــة بعمـــل
+                    الجمعيـــة ومـــن أبرزهـــا المســـائل المتعلقة بالحوكمة</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-img">
+              <img src="./assets/images/goda.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="our-story-build mangmaent-mession">
+      <div class="circle-missio">
+        <img src="./assets/images/cirlemisson.png" alt="">
+      </div>
+      <div class="container-fluid pd-50">
+        <div class="section-header">
+          <div class="head">
+            <img src="./assets/images/number4.svg" alt="">
+            <span>اختصاصات ومهام مجلس الإدارة</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-content">
+              <p>
+                تـُحدد اللائحة الأساسية اختصاصات مجلس الإدارة ومـــن أهمها ما يلي
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    فتـــح الحســـابات البنكيـــة لـــدى البنوك والمصارف السعودية، ودفع وتحصيل الشيكات أو أذونات الصرف،
+                    وكشوفات الحســـابات، وتنشيط الحسابات وقفلها وتسويتها، وتحديث البيانــــــات والاعتـــــــراض على
+                    الشيكات، واستلام الشيكات المرتجعة وغيرها من العمليات البنكيــــــة
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    تسجيل العقارات، وقبول إفراغها، وقبــــــول الوصايـــــــا والأوقـــــــــاف والهبات، ودمج صكوك أملاك
+                    الجمعية وتجزئتها وفرزها، وتحديـــــث الصكوك، وإدخالها في النظام الشامل، وتحويل الأراضي الزراعية إلى
+                    سكنية، وإجراء أي تصرفات خلاف ما سبق يكون للجمعية فيها مصلحة بعد موافقة الجمعية العمومية
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>المراجعـــة المستمـــــرة لـــلأداء، والسعي لتطبيق ممارسات الإدارة الجيـــدة وتطويرها في جميع
+                    أعمال الجمعية</span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    إدارة ممتلكات الجمعية وأموالها
+                  </span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-img">
+              <img src="./assets/images/missonman.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="our-story-build mangmaent-mession mangmaent-mession2">
+      <div class="container-fluid pd-50">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-img">
+              <img src="./assets/images/mang2.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-content">
+              <ul class="list-unstyled">
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    إعداد قواعد استثمــار الفائـــــــض من أمــوال الجمعيــــة وتفعيلهــــا بعد اعتمادها من الجمعية
+                    العمومية والوزارة
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    صياغة سياسـات وشـروط وإجراءات واضحـــــة ومحــددة للعضويـــة في مجلس الإدارة ووضعها موضع التنفيذ بعد
+                    إقرار الجمعية لها
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    تزويد الوزارة بالبيانـات والمعلومـــــــات عن الجمعيـــــــة وفـــــق النمــــاذج المعتمدة من
+                    الوزارة، وتحديثها بما يطرأ من تغيير خلال فترة لا تزيد عن شهر واحد من تاريخ وقوعه
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    تزويد الوزارة بالحساب الختامي والتقارير المالية المدققة من مـــراجع الحسابات بعد إقرارها من الجمعية
+                    العمومية خلال أربعـــة أشهر من نهاية السنة المالية </span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="our-story-build mangmaent-mession">
+      <div class="circle-missio">
+        <img src="./assets/images/cirlemisson.png" alt="">
+      </div>
+      <div class="container-fluid pd-50">
+      
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-content">
+              <ul class="list-unstyled">
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    الإشراف على إعداد التقرير السنوي للجمعية واعتماده.
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    البت في قبول عضو الجمعية العمومية الجديد، أو اعتذاره، أو إلغاء عضويته بقرار مسبب
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    إبلاغ الوزارة بكل تغيير يطرأ على حالة أعضاء الجمعية العمومية، ومجلس الإدارة، والمسؤول التنفيذي، والمدير المالي فـــي أقــــــــرب وقت ممكن وفي موعد أقصاه شهر من تاريخ التغيير
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    إدارة ممتلكات الجمعية وأموالها
+                  </span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-img">
+              <img src="./assets/images/man4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="our-story-build mangmaent-mession mangmaent-mession2">
+      <div class="container-fluid pd-50">
+      
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-img">
+              <img src="./assets/images/man4.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="our-story-build-content">
+              <ul class="list-unstyled">
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    الإشراف على إعداد التقرير السنوي للجمعية واعتماده.
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    البت في قبول عضو الجمعية العمومية الجديد، أو اعتذاره، أو إلغاء عضويته بقرار مسبب
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    إبلاغ الوزارة بكل تغيير يطرأ على حالة أعضاء الجمعية العمومية، ومجلس الإدارة، والمسؤول التنفيذي، والمدير المالي فـــي أقــــــــرب وقت ممكن وفي موعد أقصاه شهر من تاريخ التغيير
+                  </span>
+                </li>
+                <li>
+                  <img src="./assets/images/half-circle.svg" alt="">
+                  <span>
+                    إدارة ممتلكات الجمعية وأموالها
+                  </span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/wow.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
+  <script src="./assets/js/jquery.nice-select.min.js"></script>
+  <!-- for menue in mobile -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.js"
+    integrity="sha512-l2fHTYCLVbhRDc5CZWrkKJ06JWFjG5etNQ4G85PbyRiHP769IiVDmhwI0BYSFOXYJUYRmaq5PvfaxacZm9eqhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

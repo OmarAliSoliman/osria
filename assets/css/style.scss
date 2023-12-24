@@ -3427,24 +3427,24 @@ body.modal-open {
 
 /* ================================================================ */
 
-.branches-page{
+.branches-page {
   position: relative;
   overflow: hidden;
-  .thecircle{
+  .thecircle {
     position: absolute;
     z-index: -1;
   }
-  .circle1{
+  .circle1 {
     top: 10%;
     right: -250px;
   }
 
-  .circle2{
+  .circle2 {
     top: 30%;
     left: -450px;
   }
 
-  .circle3{
+  .circle3 {
     top: 70%;
     left: -450px;
   }
@@ -3454,7 +3454,7 @@ body.modal-open {
   margin-bottom: 130px;
   margin-top: 30px;
   .branche-card-content {
-    border: 0.5px solid rgba(#707070, .68);
+    border: 0.5px solid rgba(#707070, 0.68);
     padding: 38px 42px 38px 10px;
     background-color: #fff;
     position: relative;
@@ -3473,11 +3473,238 @@ body.modal-open {
       font-size: 1.1rem;
     }
   }
-  .branche-card-img{
+  .branche-card-img {
     text-align: center;
-    img{
+    img {
       width: 570px;
       margin: auto;
+    }
+  }
+}
+
+/* ================================================================ */
+
+.regulation-general-addemply-page {
+  .section-header {
+    margin-top: 54px;
+    margin-bottom: 54px;
+    h5 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  }
+  .pathes {
+    .top-content {
+      p {
+        line-height: 42px;
+      }
+    }
+    .pathes-img {
+      img {
+        width: 90%;
+      }
+    }
+  }
+
+  .defenitions {
+    background-color: #eeeeee;
+    padding: 35px 0;
+    .section-header {
+      display: block;
+      margin-bottom: 25px;
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 27px;
+        span {
+          font-size: 2.1rem;
+          font-weight: 600;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 42px;
+      }
+    }
+  }
+
+  .mangment-orgnizers {
+    .section-header {
+      display: block;
+      // margin-bottom: 175px;
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 27px;
+        span {
+          font-size: 2.1rem;
+          font-weight: 600;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 42px;
+        span {
+          display: block;
+          color: #f5862c;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .our-story-build {
+    background-color: rgba(#f5862c, 0.1);
+    padding: 50px 0 !important;
+    margin-top: 146px;
+    // margin-bottom: 0;
+    .our-story-build-content {
+      p {
+        color: #028a98;
+        font-size: 1.2rem;
+      }
+      ul {
+        li {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          span {
+            font-weight: 300;
+            margin-right: 10px;
+            line-height: 38px;
+          }
+        }
+      }
+    }
+    .our-story-build-img {
+      text-align: left;
+    }
+  }
+
+  .mangmaent-mession {
+    background-color: transparent;
+    margin-top: 30px !important;
+    padding-top: 0 !important;
+    position: relative;
+    .circle-missio {
+      position: absolute;
+      top: 50%;
+      left: -200px;
+      transform: translate(0, -50%);
+    }
+  }
+  .mangmaent-mession2{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 70px;
+    .our-story-build-img{
+      position: absolute;
+      right: 0;
+      width: 45%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.orginzer-card {
+  width: 50%;
+  // position: relative;
+  // margin-top: -120px;
+  height: 100px;
+  // border: 1px solid #000;
+  .card-text {
+    position: relative;
+    bottom: 40px;
+    width: 80%;
+  }
+  &.opsite-card {
+    margin-right: auto;
+    .card-text {
+      margin-right: auto;
+    }
+  }
+  &.first-orginzer-card {
+    .card-text {
+      p {
+        color: #9615ea;
+      }
+    }
+  }
+  &.second-orginzer-card {
+    .card-text {
+      p {
+        color: #f515b8;
+      }
+    }
+  }
+  &.third-orginzer-card {
+    .card-text {
+      p {
+        color: #4015e0;
+      }
+    }
+  }
+  &.fourth-orginzer-card {
+    .card-text {
+      p {
+        color: #00adef;
+      }
+    }
+  }
+
+  &.fifth-orginzer-card {
+    .card-text {
+      p {
+        color: #15cdec;
+      }
+    }
+  }
+
+  &.sixth-orginzer-card {
+    .card-text {
+      p {
+        color: #0dce6c;
+      }
+    }
+  }
+  &.seventh-orginzer-card {
+    .card-text {
+      p {
+        color: #8fd401;
+      }
+    }
+  }
+
+  &.eighth-orginzer-card {
+    .card-text {
+      p {
+        color: #d47c01;
+      }
+    }
+  }
+}
+
+.defenition-card {
+  text-align: center;
+  margin-bottom: 110px;
+  .card-title {
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+  .card-text {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    p {
+      font-size: 1.1rem;
+      color: #030303;
     }
   }
 }
@@ -3663,7 +3890,7 @@ body.modal-open {
   .children-contact .contact-information ul {
     flex-wrap: wrap;
   }
-  .branche-card .branche-card-img{
+  .branche-card .branche-card-img {
     margin-top: 30px;
     margin-bottom: 30px;
   }
