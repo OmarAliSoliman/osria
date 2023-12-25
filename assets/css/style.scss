@@ -3596,16 +3596,402 @@ body.modal-open {
       transform: translate(0, -50%);
     }
   }
-  .mangmaent-mession2{
+  .mangmaent-mession2 {
     position: relative;
     overflow: hidden;
     margin-bottom: 70px;
-    .our-story-build-img{
+    .our-story-build-img {
       position: absolute;
       right: 0;
       width: 45%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .mangment-mission5 {
+    background-color: #eeeeee;
+    padding: 45px 0 !important;
+    ul {
+      align-items: flex-start;
+      li {
+        width: 50% !important;
+      }
+    }
+  }
+  .mangmaent-mession6 {
+    .section-header {
+      display: block;
+      p {
+        color: #028a98;
+        font-size: 1.1rem;
+        margin-top: 40px;
+      }
+    }
+  }
+  .managment-meetings {
+    padding: 40px 0;
+    .section-header {
+      display: block;
+      .head {
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 1.1rem;
+        color: #f5862c;
+      }
+    }
+  }
+  .managment-meetings-conferanc {
+    .head {
+      text-align: center;
+    }
+    .notes {
+      margin-top: 40px;
+      p {
+        font-size: 1.2rem;
+        line-height: 42px;
+      }
+    }
+    .meeting-steps {
+      // margin-top: 158px;
+      overflow: hidden;
+      height: 100vh;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      .wrapper {
+        // width: 100%;
+        // height: 100%;
+        border: 1px solid red;
+        position: absolute;
+        left: 56%;
+        // width: 100%;
+        // height: 100%;
+        top: 35%;
+        border: 1px solid red;
+        transform: translate(-50%, -50%);
+      }
+      ul {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border: 1px solid red;
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+      }
+      li {
+        position: absolute;
+        -webkit-transition: all 2s linear;
+        -moz-transition: all 2s linear;
+        transition: all 2s linear;
+        // border: 1px solid #000;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          // border: 1px solid #000;
+        }
+        .content {
+          position: relative;
+          z-index: 4;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          // border: 1px solid #000;
+          padding-top: 15px;
+          padding-right: 15px;
+          span {
+            font-size: 1.8rem;
+            color: #b3ca43;
+          }
+          h1 {
+            font-size: 0.8rem;
+          }
+          p {
+            font-size: 0.7rem;
+            width: 70%;
+            margin: auto;
+          }
+        }
+        &.center-circle {
+          width: 380px;
+          height: 380px;
+          top: -120px;
+          left: -290px;
+          h5 {
+            position: relative;
+            z-index: 4;
+            width: 70%;
+            margin: auto;
+          }
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+          }
+        }
+        &:nth-child(3) {
+          .content {
+            span {
+              color: #54c6ff;
+            }
+          }
+        }
+        &:nth-child(4) {
+          .content {
+            span {
+              color: #5471ff;
+            }
+          }
+        }
+        &:nth-child(5) {
+          .content {
+            span {
+              color: #8d54ff;
+            }
+          }
+        }
+        &:nth-child(6) {
+          .content {
+            span {
+              color: #e354ff;
+            }
+          }
+        }
+        &:nth-child(7) {
+          .content {
+            span {
+              color: #ff54c6;
+            }
+          }
+        }
+        &:nth-child(8) {
+          .content {
+            span {
+              color: #ff5470;
+            }
+          }
+        }
+        &:nth-child(9) {
+          .content {
+            span {
+              color: #ff8d54;
+            }
+          }
+        }
+        &:nth-child(10) {
+          .content {
+            span {
+              color: #e6cc4c;
+            }
+          }
+        }
+      }
+    }
+    .note2 {
+      text-align: center;
+      color: #cb0707;
+    }
+    .meeting-steps-mobile{
+      display: none;
+      ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 0;
+        justify-content: space-between;
+      }
+      li{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          // border: 1px solid #000;
+        }
+        .content {
+          position: relative;
+          z-index: 4;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          // border: 1px solid #000;
+          padding-top: 15px;
+          padding-right: 15px;
+          span {
+            font-size: 1.8rem;
+            color: #b3ca43;
+          }
+          h1 {
+            font-size: 0.8rem;
+          }
+          p {
+            font-size: 0.7rem;
+            width: 70%;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  .secret-manage{
+    background-color: transparent;
+    margin-top: 0;
+    .section-header{
+      display: block;
+      p{
+        color: #028A98;
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        line-height: 40px;
+      }
+    }
+    ul{
+      align-items: flex-start;
+    }
+    li{
+      width: 50% !important;
+      margin-bottom: 60px !important;
+    }
+  }
+
+  .performance-evaluation{
+    background-color: #EEEEEE;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 190px !important;
+  }
+  .performance-evaluation-img{
+    .our-story-build-img{
+      width: 45%;
+      left: 0;
+      position: absolute;
       img{
         width: 100%;
+      }
+    }
+  }
+}
+
+.alea-card {
+  background-color: #fff;
+  padding: 18px 23px;
+  margin-top: 60px;
+  border-radius: 15px;
+  min-height: 470px;
+  border: 1px solid #707070;
+  transition: all 0.3s ease-in-out;
+  .alea-header {
+    margin-bottom: 23px;
+    display: flex;
+    align-items: flex-start;
+    span {
+      font-size: 1.9rem;
+      color: #028a98;
+      transition: all 0.3s ease-in-out;
+    }
+    h5 {
+      font-size: 1.9rem;
+      color: $secondColor;
+      margin: 0;
+      margin-right: 15px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    img {
+      margin-top: 8px;
+      flex: unset;
+      margin-left: 10px;
+    }
+    span {
+      font-size: 1.1rem;
+      line-height: 33px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &:hover {
+    background-color: #f5862c;
+    border-color: #f5862c;
+    span,
+    p,
+    h5 {
+      color: #ffff;
+    }
+  }
+}
+
+.status-box {
+  border: 1px solid #028a98;
+  margin-top: 25px;
+  padding: 39px;
+  border-radius: 25px;
+  min-height: 634px;
+  box-shadow: inset 0px 10px 27px rgba(#028a98, 0.31);
+  .status-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    span {
+      font-size: 1.9rem;
+      color: #028a98;
+    }
+    h5 {
+      font-size: 1.9rem;
+      color: $secondColor;
+      margin: 0;
+      margin-right: 15px;
+    }
+  }
+  .status-text {
+    margin-bottom: 20px;
+    p {
+      font-size: 1.1rem;
+      line-height: 38px;
+    }
+  }
+  .status-note {
+    h4 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      line-height: 38px;
+    }
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      span {
+        font-size: 1rem;
+        margin-right: 15px;
       }
     }
   }
@@ -3710,6 +4096,48 @@ body.modal-open {
 }
 
 /* ================================================================ */
+
+.governace-page{
+  padding: 35px 0;
+  .section-header{
+    margin-bottom: 80px;
+    h5{
+      font-size: 2.5rem;
+    }
+  }
+  .section-card-img{
+    text-align: center;
+    margin-bottom: 80px;
+    img{
+      width: 400px;
+      margin: auto;
+    }
+  }
+}
+.governace-card{
+  border: 1px solid rgba(112, 112, 112, 0.38);
+  padding: 27px 16px;
+  margin-bottom: 50px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  .card-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .card-body{
+    margin-right: 10px;
+    .card-title, .card-text{
+      margin: 0;
+    }
+    .card-title{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* ================================================================ */
 @media (max-width: 1285px) {
   html {
     font-size: 14px;
@@ -3733,6 +4161,15 @@ body.modal-open {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .regulation-general-addemply-page .managment-meetings-conferanc .meeting-steps .wrapper{
+    left: 60%;
+  }
+  .regulation-general-addemply-page .managment-meetings-conferanc .meeting-steps li.center-circle{
+    width: 320px;
+    height: 320px;
+    top: -85px;
+    left: -260px;
   }
 }
 
@@ -3796,6 +4233,35 @@ body.modal-open {
   }
   .contact-information .contact-information-wrapper .last-list {
     padding-right: 0;
+  }
+  .regulation-general-addemply-page .secret-manage .section-header p{
+    width: 100%;
+  }
+  .regulation-general-addemply-page .our-story-build .our-story-build-content ul li{
+    width: 100% !important;
+  }
+  .orginzer-card{
+    width: 100%;
+    height: auto;
+  }
+  .orginzer-card .card-text{
+    bottom: 0;
+    width: 100%;
+  }
+  .regulation-general-addemply-page .mangmaent-mession2 .our-story-build-img{
+    width: 100%;
+    position: unset;
+  }
+  .meeting-steps{
+    display: none;
+  }
+  // .orginzer-card.opsite-card img
+  .meeting-steps-mobile{
+    h5{
+      font-weight: bold;
+      margin: 40px 0;
+    }
+    display: block !important;
   }
 }
 
@@ -3893,6 +4359,12 @@ body.modal-open {
   .branche-card .branche-card-img {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .governace-card{
+    flex-direction: column;
+    .card-img{
+      margin-bottom: 20px;
+    }
   }
 }
 /* ================================================================ */

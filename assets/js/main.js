@@ -2,23 +2,24 @@ $(document).ready(function () {
   var currentDir = $("a").css("direction");
   console.log(currentDir);
 
-
-  if($(".header_slider").length){
+  if ($(".header_slider").length) {
     $(".header_slider").slick({
-      arrows : true,
-      rtl: currentDir == "rtl" ? true: false
+      arrows: true,
+      rtl: currentDir == "rtl" ? true : false,
     });
   }
 
-  if($(".osri-prgrams-card").length){
-    $(".osri-prgrams-card").map((index,item)=>{
-      const leftvar = $(item).find(".progress-bar").attr('aria-valuenow');
+  if ($(".osri-prgrams-card").length) {
+    $(".osri-prgrams-card").map((index, item) => {
+      const leftvar = $(item).find(".progress-bar").attr("aria-valuenow");
       console.log(leftvar);
-      $(item).find(".progress-bar .prog_num").css('right', `${(leftvar-10)}%` )
-    })
+      $(item)
+        .find(".progress-bar .prog_num")
+        .css("right", `${leftvar - 10}%`);
+    });
   }
 
-  if($(".custom-select").length){
+  if ($(".custom-select").length) {
     $(".custom-select").niceSelect();
   }
 
@@ -57,13 +58,12 @@ $(document).ready(function () {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow:1,
+            slidesToShow: 1,
           },
         },
       ],
-    })
+    });
   }
-
 
   if ($(".watch_video_scrollable".length)) {
     $(".watch_video_scrollable").mCustomScrollbar({
@@ -73,7 +73,6 @@ $(document).ready(function () {
       mouseWheel: { preventDefault: true },
     });
   }
-
 
   if ($(".services-slider").length) {
     $(".services-slider").slick({
@@ -125,7 +124,7 @@ $(document).ready(function () {
     });
   }
 
-  if($(".partners_section_slider").length){
+  if ($(".partners_section_slider").length) {
     $(".partners_section_slider").slick({
       slidesToShow: 4,
       arrows: true,
@@ -155,7 +154,7 @@ $(document).ready(function () {
           },
         },
       ],
-    })
+    });
   }
 
   // if ($(".watch_video_scrollable".length)) {
@@ -166,7 +165,6 @@ $(document).ready(function () {
   //     mouseWheel: { preventDefault: true },
   //   });
   // }
-
 
   // $(".custom_navbar #nav-icon1").click(function () {
   //   $(".side-nav").addClass("side-nav-open");
@@ -188,13 +186,37 @@ $(document).ready(function () {
   //   });
   // }
 
-
   if ($(".animate__animated").length) {
     new WOW().init();
   }
 
   $("html").addClass("splash-active");
 
+  if ($(".meeting-steps").length) {
+    var type = 1, //circle type - 1 whole, 0.5 half, 0.25 quarter
+      radius = "18em", //distance from center
+      start = -90, //shift start from 0
+      $elements = $(".meeting-steps li:not(:first-child)"),
+      numberOfElements = type === 1 ? $elements.length : $elements.length - 1, //adj for even distro of elements when not full circle
+      slice = (360 * type) / numberOfElements;
+
+    $elements.each(function (i) {
+      var $self = $(this),
+        rotate = slice * i + start,
+        rotateReverse = rotate * -1;
+
+      $self.css({
+        transform:
+          "rotate(" +
+          rotate +
+          "deg) translate(" +
+          radius +
+          ") rotate(" +
+          rotateReverse +
+          "deg)",
+      });
+    });
+  }
 });
 
 $(window).on("load", function () {
@@ -211,11 +233,9 @@ $(window).on("load", function () {
       add: true,
     },
   });
-  $(".mm-navbar__title").text("القائمة")
+  $(".mm-navbar__title").text("القائمة");
 });
 
 $(window).on("load", function () {
   $(".splashscreen").addClass("splashscreen_none");
 });
-
-
