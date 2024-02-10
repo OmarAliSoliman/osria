@@ -126,7 +126,7 @@ $(document).ready(function () {
 
   if ($(".partners_section_slider").length) {
     $(".partners_section_slider").slick({
-      slidesToShow: 4,
+      slidesToShow: 5,
       arrows: true,
       rtl: currentDir == "rtl" ? true : false,
       slidesToScroll: 1,
