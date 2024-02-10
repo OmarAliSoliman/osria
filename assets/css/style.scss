@@ -3317,14 +3317,15 @@ input[type="number"] {
 .contact-us-page{
   .contact-page-header{
     position: relative;
-    overflow: hidden;
-    padding-bottom: 450px;
-
+    // overflow: hidden;
+    // padding-bottom: 450px;
+    min-height: 70vh;
     .contact-img{
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       width: 60%;
+      // height: 100%;
       img{
         width: 100%;
       }
@@ -4276,6 +4277,14 @@ body.modal-open {
     top: -85px;
     left: -260px;
   }
+  .contact-us-page .contact-page-header{
+    min-height: auto;
+  }
+  .contact-us-page .contact-page-header .contact-img{
+    bottom: 0;
+    top: unset;
+    opacity: .5;
+  }
 }
 
 @media (max-width: 991px) {
@@ -4368,6 +4377,7 @@ body.modal-open {
     }
     display: block !important;
   }
+  
 }
 
 @media (max-width: 600px) {
